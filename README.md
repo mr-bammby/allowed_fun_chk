@@ -91,7 +91,7 @@ echo -e "malloc\nfree" | ./forbidden_fun_chk.sh test_file
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/forbidden-function-checker.git
+   git clone https://github.com/mr-bammby/forbidden-function-checker.git
    ```
 
 2. **Enter the directory**:
