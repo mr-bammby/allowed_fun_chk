@@ -123,7 +123,8 @@ echo -e "malloc\nfree" | ./forbidden_fun_chk.sh test_file
 
 ## Prerequisites
 
-- **`nm` command**: Part of the `binutils` package. Install it on Linux with:
+- **`nm` command**: Is preinstalled in most of Linux destributions.
+  Part of the `binutils` package. Install it on Linux with:
   ```bash
   sudo apt install binutils  # Debian/Ubuntu
   sudo yum install binutils  # CentOS/RHEL
