@@ -3,12 +3,13 @@
 This shell script, `forbidden_fun_chk.sh`, checks a given file for forbidden functions using the `nm` command. It compares a list of allowed functions against the undefined symbols (assumed to be standard library functions) found in the file, then outputs the allowed, found, and forbidden functions.
 
 ⚠️ **For final determination if forbbiden function was used the soure code should be checked.**
+📓 **Please note that some standard functions call other standard functions. Functions called inside standard function will also be found by this script.**
+
 
 ## How It Works
 
 The script uses `nm -u` to extract undefined symbols from the specified file. It takes a list of allowed functions (either from standard input or a file) and identifies any functions in the file that aren't on the allowed list. These are the "forbidden" functions. The results are displayed on standard output, with an option to save forbidden functions to a file.
 
-📓 **Please note that some standard functions call other standard functions. Functions called inside standard function will also be found by this script.**
 
 ## Usage
 
